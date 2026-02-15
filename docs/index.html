@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotebookLM Summaries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h1>NotebookLM Summaries</h1>
+            <p class="subtitle">Infographics &amp; Slide Decks</p>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+            <li class="nav-section">Infographics</li>
+            <li><a href="#" data-page="alchemy" class="nav-link">Alchemy</a></li>
+            <li><a href="#" data-page="hermeticism" class="nav-link">Hermeticism</a></li>
+            <li class="nav-section">Renaissance Magic</li>
+            <li><a href="#" data-page="renaissance-general" class="nav-link sub">General</a></li>
+            <li><a href="#" data-page="trithemius" class="nav-link sub">Trithemius</a></li>
+            <li><a href="#" data-page="bruno" class="nav-link sub">Giordano Bruno</a></li>
+            <li><a href="#" data-page="pico" class="nav-link sub">Pico della Mirandola</a></li>
+            <li><a href="#" data-page="ficino" class="nav-link sub">Marsilio Ficino</a></li>
+            <li><a href="#" data-page="agrippa" class="nav-link sub">Cornelius Agrippa</a></li>
+            <li class="nav-section">Other Topics</li>
+            <li><a href="#" data-page="kabbalah" class="nav-link">Kabbalah &amp; Tarot</a></li>
+            <li><a href="#" data-page="neoplatonism" class="nav-link">Neoplatonism</a></li>
+            <li><a href="#" data-page="other" class="nav-link">Other</a></li>
+            <li class="nav-section">Slide Decks</li>
+            <li><a href="#" data-page="slides-alchemy" class="nav-link">Alchemy</a></li>
+            <li><a href="#" data-page="slides-hermeticism" class="nav-link">Hermeticism</a></li>
+            <li><a href="#" data-page="slides-renaissance" class="nav-link">Renaissance Magic</a></li>
+            <li><a href="#" data-page="slides-kabbalah" class="nav-link">Kabbalah &amp; Tarot</a></li>
+            <li><a href="#" data-page="slides-neoplatonism" class="nav-link">Neoplatonism</a></li>
+            <li><a href="#" data-page="slides-other" class="nav-link">Other</a></li>
+        </ul>
+    </nav>
+
+    <button id="sidebar-toggle" aria-label="Toggle sidebar">&#9776;</button>
+
+    <main id="content">
+        <!-- Content injected by JS -->
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" style="display:none;">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
