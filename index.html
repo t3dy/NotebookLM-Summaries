@@ -4,49 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NotebookLM Summaries</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0f;
+            color: #e0e0e8;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #c9a84c;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .tagline {
+            text-align: center;
+            color: #8888a0;
+            margin-bottom: 48px;
+            font-size: 0.95rem;
+        }
+        h2 {
+            color: #c9a84c;
+            font-weight: 400;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #2a2a3e;
+            padding-bottom: 8px;
+            margin: 48px 0 24px;
+        }
+        h2:first-of-type { margin-top: 0; }
+        .img-block {
+            margin-bottom: 40px;
+        }
+        .img-block img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #2a2a3e;
+        }
+        .img-block .caption {
+            margin-top: 8px;
+            color: #8888a0;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <a href="#" data-page="home" class="home-link">
-                <h1>NotebookLM Summaries</h1>
-            </a>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
-            <li><a href="#" data-page="infographics" class="nav-link">Infographics</a></li>
-            <li class="nav-section">Slide Decks</li>
-            <li><a href="#" data-page="slides-alchemy" class="nav-link sub">Alchemy</a></li>
-            <li><a href="#" data-page="slides-hermeticism" class="nav-link sub">Hermeticism</a></li>
-            <li><a href="#" data-page="slides-renaissance" class="nav-link sub">Renaissance Magic</a></li>
-            <li><a href="#" data-page="slides-kabbalah" class="nav-link sub">Kabbalah &amp; Tarot</a></li>
-            <li><a href="#" data-page="slides-neoplatonism" class="nav-link sub">Neoplatonism</a></li>
-            <li><a href="#" data-page="slides-other" class="nav-link sub">Other</a></li>
-            <li class="nav-section">Esoteric Studies Chats</li>
-            <li><a href="#" data-page="chats-alchemy" class="nav-link sub">Alchemy</a></li>
-            <li><a href="#" data-page="chats-magic" class="nav-link sub">Magic</a></li>
-            <li><a href="#" data-page="chats-bruno" class="nav-link sub">Giordano Bruno</a></li>
-            <li><a href="#" data-page="chats-pico" class="nav-link sub">Pico della Mirandola</a></li>
-            <li><a href="#" data-page="chats-agrippa" class="nav-link sub">Cornelius Agrippa</a></li>
-            <li><a href="#" data-page="chats-hermeticism-neoplatonism" class="nav-link sub">Hermeticism &amp; Neoplatonism</a></li>
-            <li><a href="#" data-page="chats-kabbalah" class="nav-link sub">Kabbalah</a></li>
-            <li><a href="#" data-page="chats-renaissance" class="nav-link sub">Renaissance &amp; Early Modern</a></li>
-        </ul>
-    </nav>
+    <h1>NotebookLM Summaries</h1>
+    <p class="tagline">Infographics on alchemy, hermeticism, Renaissance magic, Kabbalah, Neoplatonism, and more.</p>
 
-    <button id="sidebar-toggle" aria-label="Toggle sidebar">&#9776;</button>
+    <h2>Alchemy</h2>
 
-    <main id="content">
-        <!-- Content injected by JS -->
-    </main>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" style="display:none;">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <img id="lightbox-img" src="" alt="">
+    <div class="img-block">
+        <img src="The%20Alchemical%20Paradox%20Infographic.png" alt="The Alchemical Paradox">
+        <div class="caption">The Alchemical Paradox</div>
+    </div>
+    <div class="img-block">
+        <img src="Atalanta%20Fugiens%20Nature's%20Secrets%20Guide.png" alt="Atalanta Fugiens: Nature's Secrets Guide">
+        <div class="caption">Atalanta Fugiens: Nature's Secrets Guide</div>
+    </div>
+    <div class="img-block">
+        <img src="The%20Art%20of%20the%20Stone.png" alt="The Art of the Stone">
+        <div class="caption">The Art of the Stone</div>
+    </div>
+    <div class="img-block">
+        <img src="The%20Alchemist%20and%20Elf%20Queen.png" alt="The Alchemist and Elf Queen">
+        <div class="caption">The Alchemist and Elf Queen</div>
+    </div>
+    <div class="img-block">
+        <img src="Albertus%20Magnus%20and%20Hermes%20Infographic.png" alt="Albertus Magnus and Hermes">
+        <div class="caption">Albertus Magnus and Hermes</div>
     </div>
 
-    <script src="app.js"></script>
+    <h2>Hermeticism</h2>
+
+    <div class="img-block">
+        <img src="Hermeticism%20and%20the%20Renaissance.png" alt="Hermeticism and the Renaissance">
+        <div class="caption">Hermeticism and the Renaissance</div>
+    </div>
+    <div class="img-block">
+        <img src="Hermes%20Philosophus%20Ramon%20Mart%C3%AD's%20Perspective.png" alt="Hermes Philosophus: Ramon Marti's Perspective">
+        <div class="caption">Hermes Philosophus: Ramon Marti's Perspective</div>
+    </div>
+
+    <h2>Renaissance Magic</h2>
+
+    <div class="img-block">
+        <img src="Renaissance%20Roots%20of%20Mass%20Manipulation.png" alt="Renaissance Roots of Mass Manipulation">
+        <div class="caption">Renaissance Roots of Mass Manipulation</div>
+    </div>
+    <div class="img-block">
+        <img src="Medieval%20Governance%20and%20Textual%20Insights.png" alt="Medieval Governance and Textual Insights">
+        <div class="caption">Medieval Governance and Textual Insights</div>
+    </div>
+
+    <h2>Trithemius</h2>
+
+    <div class="img-block">
+        <img src="Johannes%20Trithemius%20Wild%20Hunt%20Chronicler.png" alt="Johannes Trithemius: Wild Hunt Chronicler">
+        <div class="caption">Johannes Trithemius: Wild Hunt Chronicler</div>
+    </div>
+    <div class="img-block">
+        <img src="Trithemius%20Synthesis%20of%20Magical%20Theology.png" alt="Trithemius: Synthesis of Magical Theology">
+        <div class="caption">Trithemius: Synthesis of Magical Theology</div>
+    </div>
+    <div class="img-block">
+        <img src="Trithemius%20and%20Paracelsus%20Comparison%20Chart.png" alt="Trithemius and Paracelsus Comparison Chart">
+        <div class="caption">Trithemius and Paracelsus Comparison Chart</div>
+    </div>
+
+    <h2>Giordano Bruno</h2>
+
+    <div class="img-block">
+        <img src="Giordano%20Bruno%20Architect%20of%20Infinite.png" alt="Giordano Bruno: Architect of Infinite">
+        <div class="caption">Giordano Bruno: Architect of Infinite</div>
+    </div>
+    <div class="img-block">
+        <img src="Giordano%20Bruno's%20Art%20of%20Memory.png" alt="Giordano Bruno's Art of Memory">
+        <div class="caption">Giordano Bruno's Art of Memory</div>
+    </div>
+
+    <h2>Pico della Mirandola</h2>
+
+    <div class="img-block">
+        <img src="Pico%20della%20Mirandola's%20Universal%20Mind.png" alt="Pico della Mirandola's Universal Mind">
+        <div class="caption">Pico della Mirandola's Universal Mind</div>
+    </div>
+
+    <h2>Marsilio Ficino</h2>
+
+    <div class="img-block">
+        <img src="Marsilio%20Ficino's%20Early%20Apuleius%20Encounter.png" alt="Marsilio Ficino's Early Apuleius Encounter">
+        <div class="caption">Marsilio Ficino's Early Apuleius Encounter</div>
+    </div>
+
+    <h2>Cornelius Agrippa</h2>
+
+    <div class="img-block">
+        <img src="Cornelius%20Agrippa's%20Threefold%20Occult%20Universe.png" alt="Cornelius Agrippa's Threefold Occult Universe">
+        <div class="caption">Cornelius Agrippa's Threefold Occult Universe</div>
+    </div>
+
+    <h2>Kabbalah &amp; Tarot</h2>
+
+    <div class="img-block">
+        <img src="Johannes%20Reuchlin's%20De%20Arte%20Cabalistica.png" alt="Johannes Reuchlin's De Arte Cabalistica">
+        <div class="caption">Johannes Reuchlin's De Arte Cabalistica</div>
+    </div>
+    <div class="img-block">
+        <img src="Architecture%20of%20Medieval%20Kabbalistic%20Diagrams.png" alt="Architecture of Medieval Kabbalistic Diagrams">
+        <div class="caption">Architecture of Medieval Kabbalistic Diagrams</div>
+    </div>
+    <div class="img-block">
+        <img src="History%20of%20the%20Tarot%20Pivot.png" alt="History of the Tarot Pivot">
+        <div class="caption">History of the Tarot Pivot</div>
+    </div>
+
+    <h2>Neoplatonism</h2>
+
+    <div class="img-block">
+        <img src="Iamblichus%20Architect%20of%20Neoplatonic%20Soul.png" alt="Iamblichus: Architect of Neoplatonic Soul">
+        <div class="caption">Iamblichus: Architect of Neoplatonic Soul</div>
+    </div>
+    <div class="img-block">
+        <img src="Guide%20to%20Plotinus's%20Universe.png" alt="Guide to Plotinus's Universe">
+        <div class="caption">Guide to Plotinus's Universe</div>
+    </div>
+    <div class="img-block">
+        <img src="The%20Dual%20Worlds%20of%20Swedenborg.png" alt="The Dual Worlds of Swedenborg">
+        <div class="caption">The Dual Worlds of Swedenborg</div>
+    </div>
+
+    <h2>Other</h2>
+
+    <div class="img-block">
+        <img src="Margaret%20Cavendish%20The%20Blazing%20World.png" alt="Margaret Cavendish: The Blazing World">
+        <div class="caption">Margaret Cavendish: The Blazing World</div>
+    </div>
+    <div class="img-block">
+        <img src="The%20Role-Playing%20Society%20Infographic.png" alt="The Role-Playing Society">
+        <div class="caption">The Role-Playing Society</div>
+    </div>
+    <div class="img-block">
+        <img src="Transforming%20K-8%20Classrooms%20Through%20Games.png" alt="Transforming K-8 Classrooms Through Games">
+        <div class="caption">Transforming K-8 Classrooms Through Games</div>
+    </div>
+    <div class="img-block">
+        <img src="MTG%20Limited%20Drafting%20Strategy%20Guide.png" alt="MTG Limited Drafting Strategy Guide">
+        <div class="caption">MTG Limited Drafting Strategy Guide</div>
+    </div>
+    <div class="img-block">
+        <img src="Magic%20The%20Gathering%20Ecosystem%20Overview.png" alt="Magic The Gathering Ecosystem Overview">
+        <div class="caption">Magic The Gathering Ecosystem Overview</div>
+    </div>
 </body>
 </html>
