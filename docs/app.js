@@ -431,9 +431,115 @@ const pages = {
     },
 };
 
+// ── Count helpers ──
+
+const totalInfographics = Object.values(pages).reduce((n, p) => n + (p.images ? p.images.length : 0), 0);
+const totalDecks = Object.values(pages).reduce((n, p) => n + (p.decks ? p.decks.length : 0), 0);
+const totalChats = Object.values(pages).reduce((n, p) => n + (p.chats ? p.chats.length : 0), 0);
+
+// ── Infographic sections for the combined page ──
+
+const infographicSections = [
+    { label: 'Alchemy', key: 'alchemy' },
+    { label: 'Hermeticism', key: 'hermeticism' },
+    { label: 'Renaissance Magic', key: 'renaissance-general' },
+    { label: 'Trithemius', key: 'trithemius' },
+    { label: 'Giordano Bruno', key: 'bruno' },
+    { label: 'Pico della Mirandola', key: 'pico' },
+    { label: 'Marsilio Ficino', key: 'ficino' },
+    { label: 'Cornelius Agrippa', key: 'agrippa' },
+    { label: 'Kabbalah & Tarot', key: 'kabbalah' },
+    { label: 'Neoplatonism', key: 'neoplatonism' },
+    { label: 'Other Topics', key: 'other' },
+];
+
 // ── Rendering ──
 
 function renderHome() {
+    return `<div class="landing">
+        <h2>NotebookLM Summaries</h2>
+        <p class="tagline">Infographics, slide decks, and archived ChatGPT conversations on alchemy, hermeticism, Renaissance magic, Kabbalah, Neoplatonism, and more.</p>
+        <div class="landing-buttons">
+            <a href="#" data-page="infographics" class="landing-btn">
+                <span class="btn-icon">&#128444;</span>
+                <span class="btn-label">Infographics</span>
+                <span class="btn-count">${totalInfographics} images</span>
+            </a>
+            <a href="#" data-page="slide-decks" class="landing-btn">
+                <span class="btn-icon">&#128196;</span>
+                <span class="btn-label">Slide Decks</span>
+                <span class="btn-count">${totalDecks} decks</span>
+            </a>
+            <a href="#" data-page="chat-index" class="landing-btn">
+                <span class="btn-icon">&#128172;</span>
+                <span class="btn-label">Esoteric Studies Chats</span>
+                <span class="btn-count">${totalChats} conversations</span>
+            </a>
+            <a href="#" data-page="old-site" class="landing-btn">
+                <span class="btn-icon">&#128218;</span>
+                <span class="btn-label">Old Site</span>
+                <span class="btn-count">original layout</span>
+            </a>
+        </div>
+    </div>`;
+}
+
+function renderInfographics() {
+    let html = `<div class="page-header"><h2>Infographics</h2><p>All ${totalInfographics} infographics at full size. Click any image to zoom.</p></div>`;
+    for (const section of infographicSections) {
+        const p = pages[section.key];
+        if (!p || !p.images || !p.images.length) continue;
+        html += `<h3 class="infographic-section">${section.label}</h3><div class="infographic-list">`;
+        for (const img of p.images) {
+            html += `<div class="infographic-item" data-src="${IMG}${img.file}"><img src="${IMG}${img.file}" alt="${img.title}" loading="lazy"><h3>${img.title}</h3></div>`;
+        }
+        html += `</div>`;
+    }
+    return html;
+}
+
+function renderSlideIndex() {
+    const deckPages = ['slides-alchemy', 'slides-hermeticism', 'slides-renaissance', 'slides-kabbalah', 'slides-neoplatonism', 'slides-other'];
+    let html = `<div class="page-header"><h2>Slide Decks</h2><p>All ${totalDecks} PDF slide decks and videos.</p></div><div class="deck-list">`;
+    for (const key of deckPages) {
+        const p = pages[key];
+        if (!p) continue;
+        for (const deck of p.decks) {
+            const isVideo = deck.file.endsWith('.mp4');
+            const icon = isVideo ? '&#9654;' : '&#128196;';
+            html += `<a href="${PDF}${deck.file}" target="_blank" class="deck-item"><div class="deck-icon">${icon}</div><div class="deck-info"><h3>${deck.title}</h3><span class="deck-type">${deck.type}</span></div></a>`;
+        }
+    }
+    html += `</div>`;
+    return html;
+}
+
+function renderChatIndex() {
+    const chatPages = [
+        { key: 'chats-alchemy', label: 'Alchemy' },
+        { key: 'chats-magic', label: 'Magic' },
+        { key: 'chats-bruno', label: 'Giordano Bruno' },
+        { key: 'chats-pico', label: 'Pico della Mirandola' },
+        { key: 'chats-agrippa', label: 'Cornelius Agrippa' },
+        { key: 'chats-hermeticism-neoplatonism', label: 'Hermeticism & Neoplatonism' },
+        { key: 'chats-kabbalah', label: 'Kabbalah' },
+        { key: 'chats-renaissance', label: 'Renaissance & Early Modern' },
+    ];
+    let html = `<div class="page-header"><h2>Esoteric Studies Chats</h2><p>${totalChats} archived ChatGPT research conversations, organized by topic.</p></div>`;
+    for (const { key, label } of chatPages) {
+        const p = pages[key];
+        if (!p || !p.chats.length) continue;
+        html += `<h3 class="infographic-section">${label} <span style="font-size:0.8rem;color:var(--text-dim);font-weight:400;">(${p.chats.length})</span></h3><div class="deck-list">`;
+        for (const chat of p.chats) {
+            html += `<a href="${CHATS}${chat.path}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
+        }
+        html += `</div>`;
+    }
+    return html;
+}
+
+function renderOldSite() {
+    // Recreate the original multi-section home page
     const sections = [
         { label: 'Infographics', items: [
             { page: 'alchemy', title: 'Alchemy', count: pages.alchemy.images.length },
@@ -456,7 +562,7 @@ function renderHome() {
             { page: 'slides-neoplatonism', title: 'Neoplatonism', count: pages['slides-neoplatonism'].decks.length },
             { page: 'slides-other', title: 'Other Topics', count: pages['slides-other'].decks.length },
         ]},
-        { label: 'Esoteric Studies — ChatGPT Chats', items: [
+        { label: 'Esoteric Studies Chats', items: [
             { page: 'chats-alchemy', title: 'Alchemy', count: pages['chats-alchemy'].chats.length },
             { page: 'chats-magic', title: 'Magic', count: pages['chats-magic'].chats.length },
             { page: 'chats-bruno', title: 'Giordano Bruno', count: pages['chats-bruno'].chats.length },
@@ -468,25 +574,15 @@ function renderHome() {
         ]},
     ];
 
-    let html = `<div class="page-header"><h2>NotebookLM Summaries</h2><p>A curated gallery of infographics and slide decks generated from NotebookLM research sessions, plus archived ChatGPT conversations — spanning alchemy, hermeticism, Renaissance magic, Kabbalah, Neoplatonism, and more.</p></div>`;
-
+    let html = `<div class="page-header"><h2>Old Site Layout</h2><p>The original categorized view.</p></div>`;
     for (const section of sections) {
-        html += `<h3 style="color:var(--accent);margin:28px 0 14px;font-weight:400;font-size:1.1rem;">${section.label}</h3><div class="home-grid">`;
+        html += `<h3 class="infographic-section">${section.label}</h3><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-bottom:16px;">`;
         for (const item of section.items) {
             const unit = item.count === 1 ? 'item' : 'items';
-            html += `<a href="#" class="home-card" data-page="${item.page}"><h3>${item.title}</h3><div class="count">${item.count} ${unit}</div></a>`;
+            html += `<a href="#" data-page="${item.page}" style="display:block;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);transition:border-color 0.2s,transform 0.2s;"><span style="color:var(--accent);font-size:0.95rem;">${item.title}</span><br><span style="font-size:0.75rem;color:var(--text-dim);">${item.count} ${unit}</span></a>`;
         }
         html += `</div>`;
     }
-    return html;
-}
-
-function renderGallery(pageData) {
-    let html = `<div class="page-header"><h2>${pageData.title}</h2><p>${pageData.desc}</p></div><div class="gallery">`;
-    for (const img of pageData.images) {
-        html += `<div class="card" data-src="${IMG}${img.file}"><img src="${IMG}${img.file}" alt="${img.title}" loading="lazy"><div class="card-body"><h3>${img.title}</h3></div></div>`;
-    }
-    html += `</div>`;
     return html;
 }
 
@@ -510,6 +606,15 @@ function renderChats(pageData) {
     return html;
 }
 
+function renderGallery(pageData) {
+    let html = `<div class="page-header"><h2>${pageData.title}</h2><p>${pageData.desc}</p></div><div class="infographic-list">`;
+    for (const img of pageData.images) {
+        html += `<div class="infographic-item" data-src="${IMG}${img.file}"><img src="${IMG}${img.file}" alt="${img.title}" loading="lazy"><h3>${img.title}</h3></div>`;
+    }
+    html += `</div>`;
+    return html;
+}
+
 // ── Navigation ──
 
 const content = document.getElementById('content');
@@ -526,6 +631,14 @@ function navigate(pageId) {
 
     if (pageId === 'home') {
         content.innerHTML = renderHome();
+    } else if (pageId === 'infographics') {
+        content.innerHTML = renderInfographics();
+    } else if (pageId === 'slide-decks') {
+        content.innerHTML = renderSlideIndex();
+    } else if (pageId === 'chat-index') {
+        content.innerHTML = renderChatIndex();
+    } else if (pageId === 'old-site') {
+        content.innerHTML = renderOldSite();
     } else if (pages[pageId]) {
         const p = pages[pageId];
         if (p.images) {
@@ -554,10 +667,10 @@ document.addEventListener('click', e => {
         return;
     }
 
-    // Gallery card click → lightbox
-    const card = e.target.closest('.card[data-src]');
-    if (card) {
-        lightboxImg.src = card.dataset.src;
+    // Infographic item click → lightbox
+    const item = e.target.closest('.infographic-item[data-src]');
+    if (item) {
+        lightboxImg.src = item.dataset.src;
         lightbox.style.display = 'flex';
         return;
     }
