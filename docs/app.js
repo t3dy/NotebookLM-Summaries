@@ -2,6 +2,7 @@
 // For GitHub Pages, images will be in the repo root
 const IMG = '../';
 const PDF = '../';
+const CHATS = '../esoteric studies chats/';
 
 // ── Data ──
 
@@ -162,6 +163,272 @@ const pages = {
             { file: 'Worldmaking_Text_To_Virtual.pdf', title: 'Worldmaking: Text to Virtual', type: 'PDF Slide Deck' },
         ]
     },
+
+    // ── Esoteric Studies — ChatGPT Chats ──
+
+    'chats-alchemy': {
+        title: 'ChatGPT Chats — Alchemy',
+        desc: 'ChatGPT research conversations on alchemy — history, texts, emblems, historiography, and creative projects.',
+        chats: [
+            // From __Alchemy__ category folder
+            { path: '__Alchemy__/Alchemy 1908 MS deknamen/index.html', title: 'Alchemy 1908 MS Deknamen' },
+            { path: '__Alchemy__/Alchemy Al Khwarizmi/index.html', title: 'Alchemy & Al-Khwarizmi' },
+            { path: '__Alchemy__/Alchemy Ancient Byzantine/index.html', title: 'Alchemy: Ancient & Byzantine' },
+            { path: '__Alchemy__/Alchemy and Apocalyptic Discourse/index.html', title: 'Alchemy and Apocalyptic Discourse' },
+            { path: '__Alchemy__/Alchemy and Authority Summary/index.html', title: 'Alchemy and Authority' },
+            { path: '__Alchemy__/Alchemy and Gnosticism Explained/index.html', title: 'Alchemy and Gnosticism' },
+            { path: '__Alchemy__/Alchemy and Mathematics/index.html', title: 'Alchemy and Mathematics' },
+            { path: '__Alchemy__/Alchemy and Photography Origins/index.html', title: 'Alchemy and Photography Origins' },
+            { path: '__Alchemy__/Alchemy and Physics Beauty/index.html', title: 'Alchemy and Physics' },
+            { path: '__Alchemy__/Alchemy and Psychological Interpretation/index.html', title: 'Alchemy and Psychological Interpretation' },
+            { path: '__Alchemy__/Alchemy Arabic Treatise Summary/index.html', title: 'Alchemy: Arabic Treatise Summary' },
+            { path: '__Alchemy__/Alchemy Architecture and Play/index.html', title: 'Alchemy, Architecture, and Play' },
+            { path: '__Alchemy__/Alchemy Bible/index.html', title: 'Alchemy Bible' },
+            { path: '__Alchemy__/Alchemy Board Game Code Fix/index.html', title: 'Alchemy Board Game Code Fix' },
+            { path: '__Alchemy__/Alchemy Chemistry summary/index.html', title: 'Alchemy & Chemistry Summary' },
+            { path: '__Alchemy__/Alchemy Coloring Book Introduction/index.html', title: 'Alchemy Coloring Book Introduction' },
+            { path: '__Alchemy__/Alchemy Coloring Project Outline/index.html', title: 'Alchemy Coloring Project Outline' },
+            { path: '__Alchemy__/Alchemy Game Mechanics/index.html', title: 'Alchemy Game Mechanics' },
+            { path: '__Alchemy__/Alchemy Game Tutorial Design/index.html', title: 'Alchemy Game Tutorial Design' },
+            { path: '__Alchemy__/Alchemy Hiro Hirai Bodies Internal Powers/index.html', title: 'Hiro Hirai: Bodies & Internal Powers' },
+            { path: '__Alchemy__/Alchemy Historiography Summary/index.html', title: 'Alchemy Historiography Summary' },
+            { path: '__Alchemy__/Alchemy Historiography Summary (1)/index.html', title: 'Alchemy Historiography Summary (2)' },
+            { path: '__Alchemy__/Alchemy Illustrations Tweet Ideas/index.html', title: 'Alchemy Illustrations Tweet Ideas' },
+            { path: '__Alchemy__/Alchemy in Byzantium/index.html', title: 'Alchemy in Byzantium' },
+            { path: '__Alchemy__/Alchemy in Graeco-Roman Egypt/index.html', title: 'Alchemy in Graeco-Roman Egypt' },
+            { path: '__Alchemy__/Alchemy Khunrath Oberstall Lab/index.html', title: 'Khunrath & Oberstall Lab' },
+            { path: '__Alchemy__/Alchemy Lab 16-17c fine art/index.html', title: 'Alchemy Lab: 16th-17th c. Fine Art' },
+            { path: '__Alchemy__/Alchemy Lab Board Game/index.html', title: 'Alchemy Lab Board Game' },
+            { path: '__Alchemy__/Alchemy Mendicant Orders/index.html', title: 'Alchemy & Mendicant Orders' },
+            { path: '__Alchemy__/Alchemy Michelspacher Cabala/index.html', title: 'Michelspacher Cabala' },
+            { path: '__Alchemy__/Alchemy Petrus Bonus/index.html', title: 'Petrus Bonus on Alchemy' },
+            { path: '__Alchemy__/Alchemy Pinball Game Concept/index.html', title: 'Alchemy Pinball Game Concept' },
+            { path: '__Alchemy__/Alchemy Pinball Game Mechanics/index.html', title: 'Alchemy Pinball Game Mechanics' },
+            { path: '__Alchemy__/Alchemy practical exegesis/index.html', title: 'Alchemy: Practical Exegesis' },
+            { path: '__Alchemy__/Alchemy Puzzle Game Code/index.html', title: 'Alchemy Puzzle Game Code' },
+            { path: '__Alchemy__/Alchemy Puzzle Game Design/index.html', title: 'Alchemy Puzzle Game Design' },
+            { path: '__Alchemy__/Alchemy quest for longevity/index.html', title: 'Alchemy: Quest for Longevity' },
+            { path: '__Alchemy__/alchemy scholarship atalanta doc/index.html', title: 'Alchemy Scholarship: Atalanta' },
+            { path: '__Alchemy__/Alchemy theater museum/index.html', title: 'Alchemy Theater Museum' },
+            { path: '__Alchemy__/Alchemy Wine/index.html', title: 'Alchemy & Wine' },
+            { path: '__Alchemy__/Alchemy Zosimos divine images/index.html', title: 'Zosimos: Divine Images' },
+            { path: '__Alchemy__/Anatomy 17c alchemy chemistry/index.html', title: 'Anatomy, 17c Alchemy & Chemistry' },
+            { path: '__Alchemy__/Ancient Egyptian Alchemy and Science/index.html', title: 'Ancient Egyptian Alchemy & Science' },
+            { path: '__Alchemy__/Archaeology Alchemy early modern/index.html', title: 'Archaeology of Early Modern Alchemy' },
+            { path: '__Alchemy__/Archaeology of Alchemy Summary/index.html', title: 'Archaeology of Alchemy Summary' },
+            { path: '__Alchemy__/Aristotle Passages on Alchemy/index.html', title: 'Aristotle Passages on Alchemy' },
+            { path: '__Alchemy__/Art and Alchemy Summary/index.html', title: 'Art and Alchemy' },
+            { path: '__Alchemy__/Astrology and Alchemy Summary/index.html', title: 'Astrology and Alchemy' },
+            { path: '__Alchemy__/Chicago Style Bibliography Alchemy/index.html', title: 'Chicago Style Bibliography: Alchemy' },
+            { path: '__Alchemy__/Compound of Alchemy/index.html', title: 'Compound of Alchemy' },
+            { path: '__Alchemy__/Contributions to Spiritual Alchemy/index.html', title: 'Contributions to Spiritual Alchemy' },
+            { path: '__Alchemy__/Dragon Symbolism in Alchemy/index.html', title: 'Dragon Symbolism in Alchemy' },
+            { path: '__Alchemy__/Dragon Symbolism in Alchemy (1)/index.html', title: 'Dragon Symbolism in Alchemy (2)' },
+            { path: '__Alchemy__/Dragon Symbolism in Alchemy (2)/index.html', title: 'Dragon Symbolism in Alchemy (3)' },
+            { path: '__Alchemy__/Games Learning Alchemy Board Game/index.html', title: 'Games & Learning: Alchemy Board Game' },
+            { path: '__Alchemy__/Graeco-Egyptian Alchemy in Byzantium/index.html', title: 'Graeco-Egyptian Alchemy in Byzantium' },
+            { path: '__Alchemy__/Greek Alchemy Lab Summary/index.html', title: 'Greek Alchemy Lab Summary' },
+            { path: '__Alchemy__/Greek Alchemy Summary/index.html', title: 'Greek Alchemy Summary' },
+            { path: '__Alchemy__/Grimes Alchemy/index.html', title: 'Grimes on Alchemy' },
+            { path: '__Alchemy__/Hermetic Alchemy and Enoch/index.html', title: 'Hermetic Alchemy and Enoch' },
+            { path: '__Alchemy__/Instagram Posts Alchemy Emblems/index.html', title: 'Instagram Posts: Alchemy Emblems' },
+            { path: '__Alchemy__/Metabolic Domination in Alchemy/index.html', title: 'Metabolic Domination in Alchemy' },
+            { path: '__Alchemy__/New Historiography of Alchemy/index.html', title: 'New Historiography of Alchemy' },
+            { path: '__Alchemy__/Plato and Aristotle on Alchemy/index.html', title: 'Plato & Aristotle on Alchemy' },
+            { path: '__Alchemy__/Python Alchemy PDF Database/index.html', title: 'Python Alchemy PDF Database' },
+            { path: '__Alchemy__/Recent Alchemy Publications/index.html', title: 'Recent Alchemy Publications' },
+            { path: '__Alchemy__/Spiritual Alchemy Close Reading/index.html', title: 'Spiritual Alchemy: Close Reading' },
+            { path: '__Alchemy__/Spirituality of the West Alchemy/index.html', title: 'Spirituality of the West: Alchemy' },
+            { path: '__Alchemy__/Tilton on Spiritual Alchemy/index.html', title: 'Tilton on Spiritual Alchemy' },
+            { path: '__Alchemy__/Time-Travel Alchemy Episode/index.html', title: 'Time-Travel Alchemy Episode' },
+            // Standalone alchemy chats
+            { path: 'Alchemical Emblem Puzzle Ideas/index.html', title: 'Alchemical Emblem Puzzle Ideas' },
+            { path: 'Alchemical Emblems Quiz/index.html', title: 'Alchemical Emblems Quiz' },
+            { path: 'Alchemical Emblems Summary Request/index.html', title: 'Alchemical Emblems Summary' },
+            { path: 'Alchemical Emoji Ranking/index.html', title: 'Alchemical Emoji Ranking' },
+            { path: 'Alchemical Exegesis Summary/index.html', title: 'Alchemical Exegesis Summary' },
+            { path: 'Alchemical Illustrations and Materials Science/index.html', title: 'Alchemical Illustrations & Materials Science' },
+            { path: 'Alchemical Illustrations Course Design/index.html', title: 'Alchemical Illustrations Course Design' },
+            { path: 'Alchemical Imagery in Sonnets/index.html', title: 'Alchemical Imagery in Sonnets' },
+            { path: 'Alchemical Poem Interpretation/index.html', title: 'Alchemical Poem Interpretation' },
+            { path: 'Alchemical Text Summaries/index.html', title: 'Alchemical Text Summaries' },
+            { path: 'Alchemical Text Summary Request/index.html', title: 'Alchemical Text Summary Request' },
+            { path: 'Alchemical Texts Methodology Insights/index.html', title: 'Alchemical Texts: Methodology Insights' },
+            { path: "Alchemist's Black Hole Revelation/index.html", title: "Alchemist's Black Hole Revelation" },
+            { path: 'Albert the Great twins monsters/index.html', title: 'Albert the Great: Twins & Monsters' },
+            { path: '2025-01-15_Alchemy-Periodic-Table-Creation/index.html', title: 'Alchemy Periodic Table Creation' },
+            { path: '2025-01-16_Four-Books-of-Alchemy/index.html', title: 'Four Books of Alchemy' },
+            { path: '2025-01-18_Alchemia-Medica-Summary/index.html', title: 'Alchemia Medica Summary' },
+            { path: '2025-02-05_Ancient-Alchemy-Laboratory-Image/index.html', title: 'Ancient Alchemy Laboratory Image' },
+            { path: '2025-05-22_Alchemy-in-Music-and-Monteverdi/index.html', title: 'Alchemy in Music and Monteverdi' },
+            { path: '2025-05-26_Heinrich-Khunrath-Summary/index.html', title: 'Heinrich Khunrath Summary' },
+            { path: '2025-05-27_Khunrath-Theosophy-Summary/index.html', title: 'Khunrath Theosophy Summary' },
+            { path: '2025-09-02_Alchemy-materials-list/index.html', title: 'Alchemy Materials List' },
+            { path: '2025-09-09_Alchemical-text-summary/index.html', title: 'Alchemical Text Summary' },
+            { path: '2025-10-12_Pseudo-Jabir-Plato-Rectifications/index.html', title: 'Pseudo-Jabir & Plato Rectifications' },
+            { path: '2025-10-26_Overview-of-Zosimos-research/index.html', title: 'Overview of Zosimos Research' },
+            { path: '2025-11-30_Historiography-of-Alchemy/index.html', title: 'Historiography of Alchemy' },
+            { path: '2025-12-17_Alchemy-book-review-summary/index.html', title: 'Alchemy Book Review Summary' },
+        ]
+    },
+
+    'chats-magic': {
+        title: 'ChatGPT Chats — Magic',
+        desc: 'ChatGPT research conversations on magical traditions — ancient, medieval, Renaissance, and modern.',
+        chats: [
+            // From __Magic__ category folder
+            { path: '__Magic__/Agrippa and Magical Language/index.html', title: 'Agrippa and Magical Language' },
+            { path: '__Magic__/Ancient Greek Roman Magic/index.html', title: 'Ancient Greek & Roman Magic' },
+            { path: '__Magic__/Ancient Magic Educational Games/index.html', title: 'Ancient Magic Educational Games' },
+            { path: '__Magic__/Ancient Magic Summary Table/index.html', title: 'Ancient Magic Summary Table' },
+            { path: '__Magic__/Ancient Magic Vocabulary Ideas/index.html', title: 'Ancient Magic Vocabulary Ideas' },
+            { path: '__Magic__/Archaeology ancient magic/index.html', title: 'Archaeology of Ancient Magic' },
+            { path: '__Magic__/Ars Notoria Magical Context/index.html', title: 'Ars Notoria: Magical Context' },
+            { path: '__Magic__/Critiques of Yates\'s Magic/index.html', title: "Critiques of Yates's Magic" },
+            { path: '__Magic__/Crowley\'s Magical Journal Summary/index.html', title: "Crowley's Magical Journal Summary" },
+            { path: '__Magic__/Custom GPT for Magic Decks/index.html', title: 'Custom GPT for Magic Decks' },
+            { path: '__Magic__/Divination Magic Summary/index.html', title: 'Divination Magic Summary' },
+            { path: '__Magic__/Enochian Magic Summary Request/index.html', title: 'Enochian Magic Summary' },
+            { path: '__Magic__/Erotica and Sexual Magic/index.html', title: 'Erotica and Sexual Magic' },
+            { path: '__Magic__/Fanger Ritual Magic/index.html', title: 'Fanger: Ritual Magic' },
+            { path: '__Magic__/Frances Yates Renaissance Magic/index.html', title: 'Frances Yates: Renaissance Magic' },
+            { path: '__Magic__/Greek Magical Texts Summary/index.html', title: 'Greek Magical Texts Summary' },
+            { path: '__Magic__/Growing Academic Magic Channel/index.html', title: 'Growing Academic Magic Channel' },
+            { path: '__Magic__/Historical Magical Texts/index.html', title: 'Historical Magical Texts' },
+            { path: '__Magic__/Improving Magic Skills/index.html', title: 'Improving Magic Skills' },
+            { path: '__Magic__/Jewish Magic Late Antiquity/index.html', title: 'Jewish Magic: Late Antiquity' },
+            { path: '__Magic__/Jewish Magic Literature Summary/index.html', title: 'Jewish Magic Literature Summary' },
+            { path: '__Magic__/Jewish Mandaic Magic Analysis/index.html', title: 'Jewish & Mandaic Magic Analysis' },
+            { path: '__Magic__/Label of Magic 4th c/index.html', title: 'Label of Magic: 4th Century' },
+            { path: '__Magic__/Latin Vocabulary Magical Texts/index.html', title: 'Latin Vocabulary: Magical Texts' },
+            { path: '__Magic__/Magic Card Alphabet/index.html', title: 'Magic Card Alphabet' },
+            { path: '__Magic__/Magic Card Data Analysis/index.html', title: 'Magic Card Data Analysis' },
+            { path: '__Magic__/Magic Deck App Plan/index.html', title: 'Magic Deck App Plan' },
+            { path: '__Magic__/Magic Deck Archetypes Summary/index.html', title: 'Magic Deck Archetypes Summary' },
+            { path: '__Magic__/Magic Discourse Polemic Syriac/index.html', title: 'Magic Discourse & Polemic: Syriac' },
+            { path: '__Magic__/Magic in Rome Summary/index.html', title: 'Magic in Rome' },
+            { path: '__Magic__/Magic Religion in PGM/index.html', title: 'Magic & Religion in PGM' },
+            { path: '__Magic__/Magic Square Sigil App/index.html', title: 'Magic Square Sigil App' },
+            { path: '__Magic__/Magical Latin Phrases/index.html', title: 'Magical Latin Phrases' },
+            { path: '__Magic__/Magical Materials in Picatrix/index.html', title: 'Magical Materials in Picatrix' },
+            { path: '__Magic__/Magical Medieval Grim Wars/index.html', title: 'Magical Medieval Grim Wars' },
+            { path: '__Magic__/Magical Palindrome Request/index.html', title: 'Magical Palindrome Request' },
+            { path: '__Magic__/Magical Practices in Latin West/index.html', title: 'Magical Practices in the Latin West' },
+            { path: '__Magic__/Magical Vocabulary Translation Summary/index.html', title: 'Magical Vocabulary Translation' },
+            { path: '__Magic__/Magick in Theory Summary/index.html', title: 'Magick in Theory Summary' },
+            { path: '__Magic__/Medieval Magic Scholars/index.html', title: 'Medieval Magic Scholars' },
+            { path: '__Magic__/Medieval Magic Summary Request/index.html', title: 'Medieval Magic Summary' },
+            { path: '__Magic__/N. Janowitz Roman Magic/index.html', title: 'N. Janowitz: Roman Magic' },
+            { path: '__Magic__/Neoplatonic Magic Curriculum Outline/index.html', title: 'Neoplatonic Magic Curriculum' },
+            { path: '__Magic__/Plato Magic Terms List/index.html', title: 'Plato: Magic Terms List' },
+            { path: '__Magic__/Plato Neoplatonism and Renaissance Magic/index.html', title: 'Plato, Neoplatonism & Renaissance Magic' },
+            { path: '__Magic__/Practical Sigil Magic Overview/index.html', title: 'Practical Sigil Magic Overview' },
+            { path: '__Magic__/React Magic Card Display/index.html', title: 'React Magic Card Display' },
+            { path: '__Magic__/Renaissance Magic Board Game/index.html', title: 'Renaissance Magic Board Game' },
+            { path: '__Magic__/Renaissance Magicians MTG Cards/index.html', title: 'Renaissance Magicians MTG Cards' },
+            { path: '__Magic__/Sigil Magic Summary Request/index.html', title: 'Sigil Magic Summary' },
+            { path: '__Magic__/Talmudic Sources on Magic/index.html', title: 'Talmudic Sources on Magic' },
+            { path: '__Magic__/Wilson on Lit Phil Magick/index.html', title: 'Wilson on Literary & Philosophical Magick' },
+            { path: '__Magic__/Wilson\'s Magical Self-Engineering/index.html', title: "Wilson's Magical Self-Engineering" },
+            // Standalone magic chats
+            { path: '2025-01-30_Scholars-in-Greco-Roman-Magic/index.html', title: 'Scholars in Greco-Roman Magic' },
+            { path: '2025-05-29_Enochian-Language-Rigor-Myth/index.html', title: 'Enochian Language: Rigor & Myth' },
+            { path: '2025-12-07_Lesser-known-magical-sources/index.html', title: 'Lesser-Known Magical Sources' },
+            { path: 'Al-Buni Gardiner/index.html', title: 'Al-Buni & Gardiner' },
+            { path: '2025-05-26_Al-Ghazali-and-Magic-Squares/index.html', title: 'Al-Ghazali and Magic Squares' },
+        ]
+    },
+
+    'chats-bruno': {
+        title: 'ChatGPT Chats — Giordano Bruno',
+        desc: 'ChatGPT research conversations on Giordano Bruno — De Umbris Idearum, infinite worlds, memory, and satire.',
+        chats: [
+            { path: '__Bruno__/Giordano Bruno/index.html', title: 'Giordano Bruno' },
+            { path: '__Bruno__/Giordano Bruno De Umbris Idearum/index.html', title: 'De Umbris Idearum' },
+            { path: '__Bruno__/Giordano Bruno Overview/index.html', title: 'Giordano Bruno Overview' },
+            { path: '__Bruno__/Giordano Bruno Satire Summary/index.html', title: 'Bruno: Satire Summary' },
+            { path: '__Bruno__/Giordano Bruno Table Summary/index.html', title: 'Bruno: Table Summary' },
+            { path: '__Bruno__/Giordano Bruno Works Summary/index.html', title: 'Bruno: Works Summary' },
+            { path: '__Bruno__/Bruno Egli proto-RC Naples/index.html', title: 'Bruno, Egli & Proto-Rosicrucianism in Naples' },
+            { path: "__Bruno__/Bruno's Contraction Concept/index.html", title: "Bruno's Contraction Concept" },
+            { path: '__Bruno__/Hegel on Eriugena and Bruno/index.html', title: 'Hegel on Eriugena and Bruno' },
+            { path: '__Bruno__/Summary of Bruno\'s Work/index.html', title: "Summary of Bruno's Work" },
+            // Standalone
+            { path: '2025-01-16_bruno-upside-down/index.html', title: 'Bruno Upside Down' },
+            { path: '2025-09-28_Plotinus-influence-on-Bruno/index.html', title: 'Plotinus\' Influence on Bruno' },
+        ]
+    },
+
+    'chats-pico': {
+        title: 'ChatGPT Chats — Pico della Mirandola',
+        desc: 'ChatGPT research conversations on Pico — the 900 Conclusions, the Oration, Cabala, and current scholarship.',
+        chats: [
+            { path: '__Pico__/Pico and Divine Being/index.html', title: 'Pico and Divine Being' },
+            { path: '__Pico__/Pico della Mirandola Philosophy Summary/index.html', title: 'Pico della Mirandola: Philosophy Summary' },
+            { path: "__Pico__/Pico's Oration and Cabala/index.html", title: "Pico's Oration and Cabala" },
+            { path: '2025-01-07_Pico-and-Divine-Being/index.html', title: 'Pico and Divine Being (Jan 2025)' },
+            { path: '2025-07-04_Pico-900-Conclusions-Exegesis/index.html', title: 'Pico: 900 Conclusions Exegesis' },
+            { path: '2025-07-05_Pico-della-Mirandola-Summary/index.html', title: 'Pico della Mirandola Summary' },
+            { path: '2025-10-29_Cutting-edge-in-Pico-studies/index.html', title: 'Cutting Edge in Pico Studies' },
+        ]
+    },
+
+    'chats-agrippa': {
+        title: 'ChatGPT Chats — Cornelius Agrippa',
+        desc: 'ChatGPT research conversations on Agrippa — De Occulta Philosophia and magical language.',
+        chats: [
+            { path: '__Agrippa__/Agrippa and Magical Language/index.html', title: 'Agrippa and Magical Language' },
+            { path: '2026-02-06_Agrippa/index.html', title: 'Agrippa (Feb 2026)' },
+        ]
+    },
+
+    'chats-hermeticism-neoplatonism': {
+        title: 'ChatGPT Chats — Hermeticism & Neoplatonism',
+        desc: 'ChatGPT research conversations on Hermeticism, Neoplatonism, Iamblichus, Plotinus, Proclus, and Gnosticism.',
+        chats: [
+            { path: '__Iamblichus__/Hermeticism in Iamblichus Mysteries/index.html', title: 'Hermeticism in Iamblichus\' Mysteries' },
+            { path: '2025-01-09_Stoicism-and-Neoplatonism-Influence/index.html', title: 'Stoicism and Neoplatonism Influence' },
+            { path: '2025-08-17_Iamblichus-and-Hermeticism/index.html', title: 'Iamblichus and Hermeticism' },
+            { path: '2025-10-12_Gnosticism-vs-Hermeticism-comparison/index.html', title: 'Gnosticism vs. Hermeticism' },
+            { path: '2025-10-12_New-insights-in-Platonism/index.html', title: 'New Insights in Platonism' },
+            { path: '2026-01-10_Hermetica-II-Overview/index.html', title: 'Hermetica II Overview' },
+            { path: '2026-01-15_Proclus-Mereology-Explained/index.html', title: 'Proclus: Mereology Explained' },
+            { path: '2026-02-01_Unpacking-Henads-in-Neoplatonism/index.html', title: 'Unpacking Henads in Neoplatonism' },
+            { path: 'Aristotle Quotes Neoplatonist Interpretations/index.html', title: 'Aristotle: Neoplatonist Interpretations' },
+            { path: 'Apuleius Apology/index.html', title: 'Apuleius\' Apology' },
+        ]
+    },
+
+    'chats-kabbalah': {
+        title: 'ChatGPT Chats — Kabbalah',
+        desc: 'ChatGPT research conversations on Kabbalah — Abulafia, Sefer Yetzirah, and Reuchlin.',
+        chats: [
+            { path: 'Abraham Abulafia Overview/index.html', title: 'Abraham Abulafia Overview' },
+            { path: 'Abulafia and Yoga Influence/index.html', title: 'Abulafia and Yoga Influence' },
+            { path: '2025-10-12_New-picture-of-Abulafia/index.html', title: 'New Picture of Abulafia' },
+            { path: '2025-11-30_Digital-Sefer-Yetzirah-project/index.html', title: 'Digital Sefer Yetzirah Project' },
+            { path: '2026-02-06_Reuchlin/index.html', title: 'Reuchlin (Feb 2026)' },
+        ]
+    },
+
+    'chats-renaissance': {
+        title: 'ChatGPT Chats — Renaissance & Early Modern',
+        desc: 'ChatGPT research conversations on broader Renaissance topics — Trithemius, Ficino, Rosicrucianism, emblematics, and more.',
+        chats: [
+            { path: '2026-02-06_Trithemius/index.html', title: 'Trithemius (Feb 2026)' },
+            { path: '2025-02-06_Incipit-Liber-Mysticae-Theologiae/index.html', title: 'Incipit Liber Mysticae Theologiae' },
+            { path: '2025-05-27_Dürer-Hypnerotomachia-Analysis/index.html', title: 'Dürer & Hypnerotomachia Analysis' },
+            { path: '2025-06-17_Hypnerotomachia-Poliphili-Plot-Summary/index.html', title: 'Hypnerotomachia Poliphili: Plot Summary' },
+            { path: '2025-06-13_Religious-Studies-Visionary-Theories/index.html', title: 'Religious Studies: Visionary Theories' },
+            { path: '2025-07-15_Couliano-and-Yates\'-Theories/index.html', title: "Couliano and Yates' Theories" },
+            { path: '2025-10-19_Alberti-Thesis-Weller/index.html', title: 'Alberti Thesis: Weller' },
+            { path: '2026-01-10_Baltic-Rosicrucianism-Analysis/index.html', title: 'Baltic Rosicrucianism Analysis' },
+            { path: '2026-01-10_Emblematics-in-Early-Modern-Age/index.html', title: 'Emblematics in the Early Modern Age' },
+            { path: 'Buckland Museum Overview/index.html', title: 'Buckland Museum Overview' },
+            { path: 'Burnett 12th Century Renaissance/index.html', title: 'Burnett: 12th Century Renaissance' },
+            { path: 'Burnett Runes/index.html', title: 'Burnett: Runes' },
+        ]
+    },
 };
 
 // ── Rendering ──
@@ -189,9 +456,19 @@ function renderHome() {
             { page: 'slides-neoplatonism', title: 'Neoplatonism', count: pages['slides-neoplatonism'].decks.length },
             { page: 'slides-other', title: 'Other Topics', count: pages['slides-other'].decks.length },
         ]},
+        { label: 'Esoteric Studies — ChatGPT Chats', items: [
+            { page: 'chats-alchemy', title: 'Alchemy', count: pages['chats-alchemy'].chats.length },
+            { page: 'chats-magic', title: 'Magic', count: pages['chats-magic'].chats.length },
+            { page: 'chats-bruno', title: 'Giordano Bruno', count: pages['chats-bruno'].chats.length },
+            { page: 'chats-pico', title: 'Pico della Mirandola', count: pages['chats-pico'].chats.length },
+            { page: 'chats-agrippa', title: 'Cornelius Agrippa', count: pages['chats-agrippa'].chats.length },
+            { page: 'chats-hermeticism-neoplatonism', title: 'Hermeticism & Neoplatonism', count: pages['chats-hermeticism-neoplatonism'].chats.length },
+            { page: 'chats-kabbalah', title: 'Kabbalah', count: pages['chats-kabbalah'].chats.length },
+            { page: 'chats-renaissance', title: 'Renaissance & Early Modern', count: pages['chats-renaissance'].chats.length },
+        ]},
     ];
 
-    let html = `<div class="page-header"><h2>NotebookLM Summaries</h2><p>A curated gallery of infographics and slide decks generated from NotebookLM research sessions spanning alchemy, hermeticism, Renaissance magic, Kabbalah, Neoplatonism, and more.</p></div>`;
+    let html = `<div class="page-header"><h2>NotebookLM Summaries</h2><p>A curated gallery of infographics and slide decks generated from NotebookLM research sessions, plus archived ChatGPT conversations — spanning alchemy, hermeticism, Renaissance magic, Kabbalah, Neoplatonism, and more.</p></div>`;
 
     for (const section of sections) {
         html += `<h3 style="color:var(--accent);margin:28px 0 14px;font-weight:400;font-size:1.1rem;">${section.label}</h3><div class="home-grid">`;
@@ -224,6 +501,15 @@ function renderDecks(pageData) {
     return html;
 }
 
+function renderChats(pageData) {
+    let html = `<div class="page-header"><h2>${pageData.title}</h2><p>${pageData.desc}</p></div><div class="deck-list">`;
+    for (const chat of pageData.chats) {
+        html += `<a href="${CHATS}${chat.path}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
+    }
+    html += `</div>`;
+    return html;
+}
+
 // ── Navigation ──
 
 const content = document.getElementById('content');
@@ -246,6 +532,8 @@ function navigate(pageId) {
             content.innerHTML = renderGallery(p);
         } else if (p.decks) {
             content.innerHTML = renderDecks(p);
+        } else if (p.chats) {
+            content.innerHTML = renderChats(p);
         }
     }
 
