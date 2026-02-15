@@ -2,7 +2,7 @@
 // For GitHub Pages, images will be in the repo root
 const IMG = '../';
 const PDF = '../';
-const CHATS = '../esoteric studies chats/';
+const CHATS = '../esoteric%20studies%20chats/';
 
 // ── Data ──
 
@@ -453,6 +453,11 @@ const infographicSections = [
     { label: 'Other Topics', key: 'other' },
 ];
 
+// Encode path segments for URLs (spaces, apostrophes, parens, etc.)
+function encodePath(p) {
+    return p.split('/').map(s => encodeURIComponent(s)).join('/');
+}
+
 // ── Rendering ──
 
 function renderHome() {
@@ -531,7 +536,7 @@ function renderChatIndex() {
         if (!p || !p.chats.length) continue;
         html += `<h3 class="infographic-section">${label} <span style="font-size:0.8rem;color:var(--text-dim);font-weight:400;">(${p.chats.length})</span></h3><div class="deck-list">`;
         for (const chat of p.chats) {
-            html += `<a href="${CHATS}${chat.path}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
+            html += `<a href="${CHATS}${encodePath(chat.path)}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
         }
         html += `</div>`;
     }
@@ -600,7 +605,7 @@ function renderDecks(pageData) {
 function renderChats(pageData) {
     let html = `<div class="page-header"><h2>${pageData.title}</h2><p>${pageData.desc}</p></div><div class="deck-list">`;
     for (const chat of pageData.chats) {
-        html += `<a href="${CHATS}${chat.path}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
+        html += `<a href="${CHATS}${encodePath(chat.path)}" target="_blank" class="deck-item"><div class="deck-icon">&#128172;</div><div class="deck-info"><h3>${chat.title}</h3><span class="deck-type">ChatGPT Conversation</span></div></a>`;
     }
     html += `</div>`;
     return html;
